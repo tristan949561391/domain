@@ -1,0 +1,92 @@
+body,html{
+  overflow-x: hidden;
+  background-color: white;
+}
+
+.router {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  @include amt-translate(0, 0, 0.3s);
+  &.show {
+    @include amt-translate($sidenavWidth, 0, 0.3s)
+  }
+}
+
+.app_root {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  padding-top: 10px + $headnvHeight;
+}
+
+.wrapper-xs {
+  padding: 5px;
+}
+
+.wrapper-sm {
+  padding: 10px;
+}
+
+.wrapper {
+  padding: 15px;
+}
+
+.wrapper-md {
+  padding: 20px;
+}
+
+.wrapper-lg {
+  padding: 30px;
+}
+
+.wrapper-xl {
+  padding: 50px;
+}
+
+.padder-lg {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.padder-md {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.padder {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.padder-v {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.no-padder {
+  padding: 0 !important;
+}
+
+.pull-in {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.pull-out {
+  margin: -10px -15px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.rounded {
+  border-radius: 500px;
+}
+

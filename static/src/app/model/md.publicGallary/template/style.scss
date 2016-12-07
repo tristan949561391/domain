@@ -1,0 +1,108 @@
+@import "../../../../styles/theme/animations";
+@import "../../../../styles/theme/define";
+
+.container-fluid {
+  margin: 0 5px 0 5px;
+}
+
+.right_nav {
+  display: none;
+}
+
+.content_container {
+  .item {
+    padding: 4px;
+    transition: all 0.5s;
+    &.hide {
+      opacity: 0.5;
+      transition: all 0.5s 0.2s;
+    }
+    .item_content {
+      position: relative;
+      background-color: #cecece;
+      width: 100%;
+      height: 250px;
+      cursor: pointer;
+      overflow: hidden;
+      transition: all 0.3s;
+      &:hover {
+        transform: scale(1.04);
+        transform-origin: center center;
+        transition: all 0.5s 0.3s;
+        img.item_img {
+          transform: translate(0, -30%);
+          transition: all 5s;
+        }
+      }
+      img.item_img {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        transition: all 1s;
+      }
+      .item_text {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        .social_item, a.username {
+          font-weight: 400;
+          color: whitesmoke;
+          text-shadow: 0 0 7px black;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+        a.username {
+          transform: translate(0, 50%);
+          margin-left: 4px;
+        }
+        .social_item {
+          span {
+            margin-left: 8px;
+            i {
+              margin-right: 2px;
+              &.do {
+                color: red;
+              }
+            }
+          }
+        }
+        img.head_ico {
+          width: 45px;
+          height: 45px;
+          border-radius: 30px;
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+  .load_more {
+    font-size: 24px;
+    font-weight: 400;
+    padding: 10px auto;
+  }
+}
+
+
+
+@media  (min-width: 768px) {
+  .right_nav {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: block;
+  }
+  .container-fluid {
+    margin: 0 10px 0 10px;
+  }
+  .content_container {
+    .item {
+      padding: 7px;
+    }
+  }
+
+}
+

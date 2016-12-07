@@ -1,0 +1,4 @@
+@mixin amt-translate($X,$Y,$long) {
+  transform: translate($X, $Y);
+  transition: transform $long;
+}

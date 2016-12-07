@@ -1,0 +1,38 @@
+/* line 4, login.scss */
+.register_body {
+  display: none;
+}
+/* line 6, login.scss */
+.register_body.show {
+  display: block;
+}
+
+/* line 12, login.scss */
+.login_body.hide {
+  display: none;
+}
+
+/* line 18, login.scss */
+.choose_option button:first-child {
+  width: 45%;
+  margin-left: 0;
+}
+/* line 22, login.scss */
+.choose_option button:last-child {
+  width: 45%;
+  margin-right: 0;
+}
+
+/* line 28, login.scss */
+.form-group {
+  position: relative;
+}
+/* line 30, login.scss */
+.form-group span.err {
+  font-size: 15px;
+  position: absolute;
+  transform: translate(0, 7.5px);
+  bottom: 50%;
+  right: 10px;
+  color: red;
+}

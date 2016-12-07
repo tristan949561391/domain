@@ -1,0 +1,23 @@
+{
+  "server": {
+    "port": 8080
+  },
+  "cookie": {
+    "maxAge": 36000000,
+    "httpOnly": true,
+    "path": "/"
+  },
+  "session":{
+    "key":"moodust",
+    "prefix":"sess"
+  },
+  "redis": {
+    "url": "localhost",
+    "port": 6379
+  },
+  "mongo": {
+    "url": "mongodb://localhost",
+    "port": 27017,
+    "db": "moondust"
+  }
+}

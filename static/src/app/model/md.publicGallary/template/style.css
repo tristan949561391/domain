@@ -1,0 +1,116 @@
+/* line 4, style.scss */
+.container-fluid {
+  margin: 0 5px 0 5px;
+}
+
+/* line 8, style.scss */
+.right_nav {
+  display: none;
+}
+
+/* line 13, style.scss */
+.content_container .item {
+  padding: 4px;
+  transition: all 0.5s;
+}
+/* line 16, style.scss */
+.content_container .item.hide {
+  opacity: 0.5;
+  transition: all 0.5s 0.2s;
+}
+/* line 20, style.scss */
+.content_container .item .item_content {
+  position: relative;
+  background-color: #cecece;
+  width: 100%;
+  height: 250px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+/* line 28, style.scss */
+.content_container .item .item_content:hover {
+  transform: scale(1.04);
+  transform-origin: center center;
+  transition: all 0.5s 0.3s;
+}
+/* line 32, style.scss */
+.content_container .item .item_content:hover img.item_img {
+  transform: translate(0, -30%);
+  transition: all 5s;
+}
+/* line 37, style.scss */
+.content_container .item .item_content img.item_img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  transition: all 1s;
+}
+/* line 45, style.scss */
+.content_container .item .item_content .item_text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/* line 50, style.scss */
+.content_container .item .item_content .item_text .social_item, .content_container .item .item_content .item_text a.username {
+  font-weight: 400;
+  color: whitesmoke;
+  text-shadow: 0 0 7px black;
+  overflow: hidden;
+  white-space: nowrap;
+}
+/* line 57, style.scss */
+.content_container .item .item_content .item_text a.username {
+  transform: translate(0, 50%);
+  margin-left: 4px;
+}
+/* line 62, style.scss */
+.content_container .item .item_content .item_text .social_item span {
+  margin-left: 8px;
+}
+/* line 64, style.scss */
+.content_container .item .item_content .item_text .social_item span i {
+  margin-right: 2px;
+}
+/* line 66, style.scss */
+.content_container .item .item_content .item_text .social_item span i.do {
+  color: red;
+}
+/* line 72, style.scss */
+.content_container .item .item_content .item_text img.head_ico {
+  width: 45px;
+  height: 45px;
+  border-radius: 30px;
+  margin-left: 8px;
+}
+/* line 81, style.scss */
+.content_container .load_more {
+  font-size: 24px;
+  font-weight: 400;
+  padding: 10px auto;
+}
+
+@media (min-width: 768px) {
+  /* line 91, style.scss */
+  .right_nav {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: block;
+  }
+
+  /* line 98, style.scss */
+  .container-fluid {
+    margin: 0 10px 0 10px;
+  }
+
+  /* line 102, style.scss */
+  .content_container .item {
+    padding: 7px;
+  }
+}
