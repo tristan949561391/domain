@@ -1,8 +1,10 @@
 const http = require('http');
 const app = require('../core/app')
 const config = require('../config')
-
-
+const log = require('md-log')
+process.ENV = 'DEV'
+// progress.ENV = 'PRO'
+// progress.ENV = 'TES'
 http.createServer(app.callback()).listen(config.server.port, () => {
-    console.log(`boot success at ${config.server.port}`)
+    log.debug(`boot success at ${config.server.port}`, 'boot')
 });

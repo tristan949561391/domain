@@ -1,0 +1,53 @@
+body, html {
+  -webkit-font-smoothing: none;
+  background-color: $bg_color;
+  color: $color;
+  font-family: "SimHei",Tahoma,Arial;
+}
+
+//--------------------------------------------------button
+button {
+  cursor: pointer;
+}
+
+a, input, button {
+  outline: none;
+}
+
+.input_group {
+  position: relative;
+  overflow: hidden;
+  .left-ico {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 100%;
+    transform: translate(0, -50%);
+  }
+  .right-ico {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+//--------------------------------------------------input/button styles
+.md-big {
+  font-weight: 500;
+  height: 5.8rem;
+  font-size: 2.4rem;
+  border: 0.1rem solid #111;
+  line-height: 5.8rem;
+  &.noborder {
+    border: none;
+  }
+}
+
+button, input, a, span {
+  &.btn-default {
+    background-color: $btn_bgcolor_default;
+    color: $btn_color_default;
+  }
+}

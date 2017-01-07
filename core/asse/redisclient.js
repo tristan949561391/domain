@@ -4,13 +4,11 @@
 const redis = require('redis')
 const config = require('../../config')
 const redisClient = redis.createClient(config.redis.port, config.redis.url, {})
+const log=require('md-log')
 redisClient.on('ready', function () {
-    console.log('redis connect success')
+    log.debug('redis connect success','boot')
 })
-
-
 redisClient.on('error', function () {
-    console.error('redis connect error')
+    log.error('redis connect error','boot')
 })
-
 module.exports = redisClient

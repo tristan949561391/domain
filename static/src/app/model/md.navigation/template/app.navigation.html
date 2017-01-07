@@ -1,0 +1,146 @@
+<nav class="nav_headnav">
+    <div class="nav_item">
+        <div class="nav_cont point " routerLink="/">
+            <span class="head_brand"><i class="fa fa-facebook" aria-hidden="true"></i>花花花插画</span>
+        </div>
+    </div>
+    <div class="search">
+        <div class="nav_item">
+            <div class="nav_cont opcity_3">
+                <input type="text" class="radius_max search" placeholder="{{tip_seach||'点击搜索'}}"
+                       (focus)="tip_seach='搜索插画，风格，用户'"
+                       (blur)="tip_seach=null">
+            </div>
+        </div>
+    </div>
+    <div class="options pull-right">
+        <div class="nav_item">
+            <div class="nav_cont line">
+            </div>
+        </div>
+        <div class="nav_item point">
+            <div class="nav_cont pull-right">
+                <i class="fa fa-music" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="nav_item point">
+            <div class="nav_cont pull-right">
+                <i class="fa fa-download" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="nav_item point" (click)="fullscreen()">
+            <div class="nav_cont pull-right">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+            </div>
+        </div>
+
+    </div>
+    <div class="login pull-right">
+        <div class="nav_item">
+            <div class="nav_cont point" *ngIf="!a" (click)="a=true">
+                <img src="/assets/img/demo/demo_head.jpeg" class="head_ico"/>
+                <span class="head_profile pull-right">18156114641</span>
+            </div>
+            <div class="nav_cont point" *ngIf="a" (click)="module='login'">
+                <i class="fa fa-user-o head_ico" aria-hidden="true"></i>
+                <span class="head_profile pull-right">未登录</span>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<nav class="nav_sidenav">
+    <ul class="side_group">
+        <li class="title">
+            推荐
+        </li>
+        <li class="item" routerLink="/index.html" routerLinkActive="active">
+            <i class="fa fa-desktop" aria-hidden="true"></i>插画广场
+        </li>
+        <li class="item" routerLink="ranking" routerLinkActive="active">
+            <i class="fa fa-briefcase" aria-hidden="true"></i>排行榜
+        </li>
+        <li class="item">
+            <i class="fa fa-music" aria-hidden="true"></i>MV
+        </li>
+        <li class="item" routerLinkActive="active" routerLink="circle">
+            <i class="fa fa-group" aria-hidden="true"></i>好友发布
+        </li>
+    </ul>
+    <ul class="side_group">
+        <li class="title">
+            关于我
+        </li>
+        <li class="item">
+            <i class="fa fa-music" aria-hidden="true"></i>本地音乐
+        </li>
+        <li class="item">
+            <i class="fa fa-music" aria-hidden="true"></i>下载管理
+        </li>
+        <li class="item">
+            <i class="fa fa-music" aria-hidden="true"></i>我的音乐云盘
+        </li>
+        <li class="item">
+            <i class="fa fa-music" aria-hidden="true"></i>我的歌手
+        </li>
+        <li class="item">
+            <i class="fa fa-music" aria-hidden="true"></i>我的MV
+        </li>
+    </ul>
+    <ul class="side_group">
+        <li class="title">
+            我的歌单
+        </li>
+        <li class="item">
+            <i class="fa fa-music" aria-hidden="true"></i>广场
+        </li>
+        <li class="item">
+            <i class="fa fa-music" aria-hidden="true"></i>广场
+        </li>
+        <li class="item">
+            <i class="fa fa-music" aria-hidden="true"></i>广场
+        </li>
+        <li class="item">
+            <i class="fa fa-music" aria-hidden="true"></i>广场
+        </li>
+        <li class="item">
+            <i class="fa fa-music" aria-hidden="true"></i>广场
+        </li>
+        <li class="item">
+            <i class="fa fa-music" aria-hidden="true"></i>广场
+        </li>
+    </ul>
+</nav>
+
+<nav class="nav_floatnav ">
+    <nav class="nav_floatnav_item point">
+    </nav>
+    <nav class="nav_floatnav_item point">
+    </nav>
+    <nav class="nav_floatnav_item point">
+    </nav>
+    <nav class="nav_floatnav_item point">
+    </nav>
+</nav>
+<div class="submodule" [ngClass]="{show: module!=null}">
+    <div class="submodule_close" (click)="module=null">
+        <i class="fa fa-close" aria-hidden="true"></i>
+    </div>
+    <div class="module_login" *ngIf="module=='login'">
+    </div>
+</div>
+
+<div class="route">
+    <router-outlet>
+    </router-outlet>
+</div>
+
+<div class="nav_footnav text-center">
+    moondust.com
+</div>
+<div class="shadow" *ngIf="module!=null" (click)="module=null">
+
+</div>
+
+
+

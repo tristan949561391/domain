@@ -1,5 +1,44 @@
-$sidenavWidth: 180px;
-$headnvHeight: 41px;
-$BGheadnv: white;
-$BGnav_active: black;
-$textcolor:black;
+$red_l:#f26b58;
+$red_m:#d9120f;
+$red_d:#a2151e;
+
+
+
+$green_l:#95ac98;
+$green_m:#95ac98;
+$green_d:#a6b59e;
+
+//----body
+$bg_color:#ededed;
+$color:#151a1d;
+
+//------------------navgation
+//---headnav
+$bg_headnav:#141817;
+$color_headnav:#f5f5f3;
+$height_headnav: 42px;
+$height_headnav_cont: 22px;
+
+//---sidenav
+$bg_sidenav:#e0e4d3;
+$bg_item_forcus:$green_d;
+$width_sidenav:180px;
+
+//---floatnav
+$bg_floatnav:$bg_headnav;
+$color_floatnav:$color_headnav;
+
+//--footnav
+$bg_footnav:$bg_headnav;
+$color_footnav:$color_headnav;
+
+
+
+//--submodule
+$width_submodule:300px;
+$bg_submodule:$bg_sidenav;
+
+//----------------btn
+$btn_bgcolor_default: #006600;
+$btn_color_default: #fff;
+

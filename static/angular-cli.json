@@ -18,14 +18,11 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
-        "styles/bootstrap/bootstrap.min.css",
         "styles/font-awesome/css/font-awesome.min.css",
-        "styles/loadings/loading.css",
-        "styles/theme/default.css"
+        "styles/theme/style.css"
       ],
       "scripts": [
-        "../node_modules/jquery/dist/jquery.min.js",
-        "plugins/slidePage.js"
+        "../node_modules/jquery/dist/jquery.min.js"
       ],
       "environments": {
         "source": "environments/environment.ts",

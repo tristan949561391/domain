@@ -1,15 +1,15 @@
 {
   "server": {
-    "port": 8080
+    "port": 80
   },
   "cookie": {
     "maxAge": 36000000,
     "httpOnly": true,
     "path": "/"
   },
-  "session":{
-    "key":"moodust",
-    "prefix":"sess"
+  "session": {
+    "key": "moodust",
+    "prefix": "sess"
   },
   "redis": {
     "url": "localhost",
@@ -19,5 +19,24 @@
     "url": "mongodb://localhost",
     "port": 27017,
     "db": "moondust"
+  },
+  "log4j": {
+    "appenders": [
+      {
+        "type": "console",
+        "category": "console"
+      },
+      {
+        "type": "dateFile",
+        "filename": "C:/data/",
+        "pattern": "yyyyMMddhh.txt",
+        "absolute": true,
+        "alwaysIncludePattern": true,
+        "category": "logInfo"
+      }
+    ],
+    "levels": {
+      "logInfo": "DEBUG"
+    }
   }
 }

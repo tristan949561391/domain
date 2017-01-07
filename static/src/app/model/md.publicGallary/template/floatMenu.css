@@ -1,8 +1,0 @@
-/* line 1, floatMenu.scss */
-.scroll_to_top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: block;
-  background-color: transparent;
-}

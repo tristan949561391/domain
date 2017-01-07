@@ -34,6 +34,7 @@ app.use(async(ctx, next) => {
     try {
         await next()
     } catch (e) {
+        console.log(e.stack)
         ctx.throw(e.message,e.status||500)
     }
 })

@@ -1,0 +1,10 @@
+/* line 3, floatnav.scss */
+nav.nav_floatnav_item {
+  width: 52px;
+  height: 52px;
+  border-radius: 30px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}

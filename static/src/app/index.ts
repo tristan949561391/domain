@@ -1,1 +1,1 @@
-export * from './model/md.shell/app.module';
+export * from './model/md.navigation/md.navigation';

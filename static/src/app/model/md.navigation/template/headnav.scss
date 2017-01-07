@@ -1,0 +1,73 @@
+@import "../../../../styles/theme/define";
+
+nav.nav_headnav {
+  background-color: $bg_headnav;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  color: $color_headnav;
+  z-index: 1000;
+  .nav_item {
+    height: $height_headnav;
+    float: left;
+    padding: 0 10px;
+  }
+  .nav_cont {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+.head_brand {
+  margin-left: 5px;
+  font-size: $height_headnav_cont;
+  font-weight: 200;
+  .fa {
+    margin-right: 3px;
+  }
+}
+
+.search {
+  input {
+    height: $height_headnav_cont;
+    border: none;
+    color: white;
+    width: 54px;
+    height: 28px;
+    padding: 0px 10px;
+    background-color: black;
+    transition: all 0.5s;
+    &:focus, &:hover {
+      width: 200px;
+      transition: all 0.3s;
+    }
+  }
+}
+
+.login {
+  .head_ico {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    margin-right: 5px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 23px;
+  }
+  .head_profile {
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
+
+.options {
+  float: right;
+  margin-right: 5px;
+}
+
+.line {
+  border-right: 2px solid $color_headnav;
+  height: 23px;
+}

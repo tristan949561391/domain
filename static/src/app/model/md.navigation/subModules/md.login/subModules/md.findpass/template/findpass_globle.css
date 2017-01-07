@@ -1,0 +1,15 @@
+/* line 1, findpass_globle.scss */
+.login_container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* line 6, findpass_globle.scss */
+.login_container .input_group {
+  margin-bottom: 30px;
+}
+/* line 8, findpass_globle.scss */
+.login_container .input_group input, .login_container .input_group button {
+  width: 378px;
+}

@@ -27,7 +27,8 @@ router.post('/register',async(ctx ,next)=>{
         let err= new Error('params is not legal')
         throw err
     }
-    await require('../../server/userService').register(mobile,password,vcode,'')
+    let ip=require('../../utils/UtilWeb').getClientIp(ctx.req)
+    await require('../../server/userService').register(mobile,password,vcode,ip)
     ctx.body='register success'
 })
 module.exports = router

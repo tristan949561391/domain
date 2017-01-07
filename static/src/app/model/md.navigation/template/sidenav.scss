@@ -1,0 +1,35 @@
+@import "../../../../styles/theme/define";
+
+nav.nav_sidenav {
+  position: fixed;
+  left: 0;
+  top: $height_headnav;
+  bottom: 0;
+  width: $width_sidenav;
+  background-color: $bg_sidenav;
+  z-index: 999;
+  .side_group{
+      font-size: 15px;
+    width: $width_sidenav;
+    .title{
+      padding-left: 15px;
+      line-height: 40px;
+    }
+    .item{
+      padding-left: 25px;
+      cursor: pointer;
+      line-height: 30px;
+      .fa{
+        margin-right: 20px;
+      }
+      &:hover{
+        transition: all 0.5s;
+        background-color: $bg_item_forcus;
+      }
+      &.active{
+        background-color: $bg_item_forcus;
+        border-left: 6px solid $red_d;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.login_container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .input_group {
+    margin-bottom: 30px;
+    input, button {
+      width: 378px;
+    }
+  }
+}

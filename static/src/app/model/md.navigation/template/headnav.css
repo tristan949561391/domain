@@ -1,0 +1,78 @@
+/* line 3, headnav.scss */
+nav.nav_headnav {
+  background-color: #141817;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  color: #f5f5f3;
+  z-index: 1000;
+}
+/* line 11, headnav.scss */
+nav.nav_headnav .nav_item {
+  height: 42px;
+  float: left;
+  padding: 0 10px;
+}
+/* line 16, headnav.scss */
+nav.nav_headnav .nav_cont {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+/* line 23, headnav.scss */
+.head_brand {
+  margin-left: 5px;
+  font-size: 22px;
+  font-weight: 200;
+}
+/* line 27, headnav.scss */
+.head_brand .fa {
+  margin-right: 3px;
+}
+
+/* line 33, headnav.scss */
+.search input {
+  height: 22px;
+  border: none;
+  color: white;
+  width: 54px;
+  height: 28px;
+  padding: 0px 10px;
+  background-color: black;
+  transition: all 0.5s;
+}
+/* line 42, headnav.scss */
+.search input:focus, .search input:hover {
+  width: 200px;
+  transition: all 0.3s;
+}
+
+/* line 50, headnav.scss */
+.login .head_ico {
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  margin-right: 5px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 23px;
+}
+/* line 59, headnav.scss */
+.login .head_profile {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+/* line 65, headnav.scss */
+.options {
+  float: right;
+  margin-right: 5px;
+}
+
+/* line 70, headnav.scss */
+.line {
+  border-right: 2px solid #f5f5f3;
+  height: 23px;
+}

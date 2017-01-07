@@ -1,10 +1,10 @@
 /**
  * Created by Tristan on 16/10/15.
  */
-var fs = require('fs')
-var path = require('path')
-var config
-if (fs.existsSync(path.join(path.resolve(), 'config/resource.dev.json'))) {
+let fs = require('fs')
+let path = require('path')
+let config
+if (process.ENV != 'PRO') {
     config = require('./resource.dev.json')
 } else {
     config = require('./resource.json')

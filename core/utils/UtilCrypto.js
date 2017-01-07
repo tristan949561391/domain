@@ -1,7 +1,7 @@
 /**
  * Created by Tristan on 16/11/25.
  */
-let uuid = require('node-uuid');
+let uuid = require('uuid');
 const crypto = require('crypto');
 function md5(str) {
     const md5sum = crypto.createHash('md5');

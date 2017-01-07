@@ -1,9 +1,9 @@
 /**
  * Created by tc949 on 2016/10/14.
  */
-var mongoose = require('mongoose')
+let mongoose = require('mongoose')
 
-var clientSchema = mongoose.Schema(
+let clientSchema = mongoose.Schema(
     {
         clientId: String,
         clientName: String,
@@ -13,5 +13,5 @@ var clientSchema = mongoose.Schema(
         sign: String
     }
 )
-var clientModel = mongoose.model("client", clientSchema)
+let clientModel = mongoose.model("client", clientSchema)
 module.exports = clientModel

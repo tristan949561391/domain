@@ -1,0 +1,40 @@
+/* line 3, sidenav.scss */
+nav.nav_sidenav {
+  position: fixed;
+  left: 0;
+  top: 42px;
+  bottom: 0;
+  width: 180px;
+  background-color: #e0e4d3;
+  z-index: 999;
+}
+/* line 11, sidenav.scss */
+nav.nav_sidenav .side_group {
+  font-size: 15px;
+  width: 180px;
+}
+/* line 14, sidenav.scss */
+nav.nav_sidenav .side_group .title {
+  padding-left: 15px;
+  line-height: 40px;
+}
+/* line 18, sidenav.scss */
+nav.nav_sidenav .side_group .item {
+  padding-left: 25px;
+  cursor: pointer;
+  line-height: 30px;
+}
+/* line 22, sidenav.scss */
+nav.nav_sidenav .side_group .item .fa {
+  margin-right: 20px;
+}
+/* line 25, sidenav.scss */
+nav.nav_sidenav .side_group .item:hover {
+  transition: all 0.5s;
+  background-color: #a6b59e;
+}
+/* line 29, sidenav.scss */
+nav.nav_sidenav .side_group .item.active {
+  background-color: #a6b59e;
+  border-left: 6px solid #a2151e;
+}
